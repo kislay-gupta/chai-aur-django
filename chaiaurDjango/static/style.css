@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(146, 146, 153);
+  color: aliceblue;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2em;
+}
