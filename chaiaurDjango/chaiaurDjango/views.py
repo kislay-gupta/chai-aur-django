@@ -11,3 +11,6 @@ def about(request):
 
 def contact(request):
     return render(request,'website/contact.html')
+
+def all_chai(request):
+    return render(request, 'all_chai.html')
