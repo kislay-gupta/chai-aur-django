@@ -1,14 +1,18 @@
-{% load static %} {% load static tailwind_tags %}
-
+{% load static %}
+{% load static tailwind_tags %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Django aur chai {% endblock %}</title>
+    <link rel="stylesheet" href='{% static "style.css" %}' />
     {% tailwind_css %}
-    <link rel="stylesheet" href="{%  static 'style.css' %}" />
-    <title>{% block title %} Chai aur Django {% endblock title %}</title>
   </head>
   <body>
-    <nav>I will add it later</nav>
-    {% block content %} {% endblock %}
+    <nav class="text-2xl">This is navbar</nav>
+    <div class="flex justify-center text-red-500">
+      {% block content %} {% endblock %}
+    </div>
   </body>
 </html>
